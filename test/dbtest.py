@@ -11,8 +11,8 @@ def dbconnect(func):
     def inner(*args, **kwargs):
         inner.__wrapped__ = func
         params = {
-            "host": "localhost",
-            "port": 5438,
+            "host": "testdb",
+            "port": 5432,
             "dbname": "test",
             "user": "postgres",
             "password": "password",
